@@ -1,4 +1,4 @@
-package nl.isweg.merijn.neuroticnetwork;
+package nl.isweg.merijn.neuroticnetwork.node;
 
 /**
  * A Variable is a Node that can be explicitly set to a value.
