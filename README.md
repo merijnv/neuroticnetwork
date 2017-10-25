@@ -13,3 +13,35 @@ See git branch for the list of steps, checkout each branch in order, to see how
 the first step goes to the next etc.
 
 
+Step 0
+======
+
+The basis of this neural network implementation is a compute network, that
+consists of Nodes.
+
+Node
+----
+
+A Node is just a thing that can return a double value, with a toString that
+makes it look kind of like a node.
+
+Inputs, Neurons and Axions (the things between neurons) are all Nodes in the compute network.
+
+Variable
+--------
+
+A Variable is a Node that can contain a value. It can be set initially and
+later set explicitly.
+
+These form the basis for the inputs of the neural network.
+
+
+Compute
+-------
+
+A compute node has inputs, which all are Nodes.
+
+When asked for its value, it returns the sum of its inputs. 
+
+If it doesn't have any input, the output will be NaN.
+
