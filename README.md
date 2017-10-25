@@ -35,6 +35,9 @@ later set explicitly.
 
 These form the basis for the inputs of the neural network.
 
+Step 1
+======
+
 
 Compute
 -------
@@ -45,6 +48,9 @@ When asked for its value, it returns the sum of its inputs.
 
 If it doesn't have any input, the output will be NaN.
 
+
+Step 2
+======
 
 Neurons and connections
 =======================
