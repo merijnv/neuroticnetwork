@@ -45,3 +45,13 @@ When asked for its value, it returns the sum of its inputs.
 
 If it doesn't have any input, the output will be NaN.
 
+
+Neurons and connections
+=======================
+
+Neuron
+------
+
+The Neurons in the network are Compute nodes, with a bias.
+
+The value of the Neuron is the sum of its inputs, plus the bias.
