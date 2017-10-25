@@ -35,9 +35,6 @@ later set explicitly.
 
 These form the basis for the inputs of the neural network.
 
-Step 1
-======
-
 
 Compute
 -------
