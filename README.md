@@ -55,3 +55,10 @@ Neuron
 The Neurons in the network are Compute nodes, with a bias.
 
 The value of the Neuron is the sum of its inputs, plus the bias.
+
+Connection
+----------
+
+A connection is a thing that connects to an input Node has a weight, and when
+asked for its value, a Connection asks the input for its value and multiplies
+that by its weight to give its output.

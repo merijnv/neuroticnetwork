@@ -1,12 +1,18 @@
 package nl.isweg.merijn.neuroticnetwork.neural;
 
 import nl.isweg.merijn.neuroticnetwork.node.Variable;
+import org.junit.Before;
 import org.junit.Test;
 
 import static junit.framework.TestCase.assertEquals;
 
 public class NeuronTest {
-    Neuron n = new Neuron();
+    Neuron n = null;
+
+    @Before
+    public void before() {
+        n = new Neuron();
+    }
 
     @Test
     public void neuronsHaveBiasInitiallyZero() {

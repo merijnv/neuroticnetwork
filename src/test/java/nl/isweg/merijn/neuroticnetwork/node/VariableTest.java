@@ -17,4 +17,13 @@ public class VariableTest {
         Variable v = new Variable(0.5);
         assertEquals(0.5, v.getValue());
     }
+
+    @Test
+    public void variableValueIsVariable() {
+        Variable v = new Variable(0.5);
+        assertEquals(0.5, v.getValue(), 0.0001);
+        v.setValue(0.8);
+        assertEquals(0.8, v.getValue(), 0.0001);
+
+    }
 }
