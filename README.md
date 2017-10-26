@@ -49,16 +49,41 @@ If it doesn't have any input, the output will be NaN.
 Neurons and connections
 =======================
 
-Neuron
-------
+ComputeNeuron
+-------------
 
-The Neurons in the network are Compute nodes, with a bias.
+The ComputeNeurons in the network are Compute nodes, with a bias.
 
 The value of the Neuron is the sum of its inputs, plus the bias.
+
+InputNeuron
+-----------
+
+The InputNeurons are Variables.
+
+Both these implement the Neuron interface, so they can be used in connections.
 
 Connection
 ----------
 
-A connection is a thing that connects to an input Node has a weight, and when
-asked for its value, a Connection asks the input for its value and multiplies
-that by its weight to give its output.
+A connection is a thing that connects to an input Neuron, has a weight, and
+when asked for its value, a Connection asks the input for its value and
+multiplies that by its weight to give its output.
+
+
+Layers
+======
+
+The layers contain Neurons.
+
+InputLayer
+----------
+
+The InputLayer contains strictly InputNeurons.
+
+HiddenLayer and OutputLayer
+---------------------------
+
+These contain ComputeNeurons, and can connect to a previous layer.
+Connecting means constructing all Connections from the Neurons of this layer
+to all the Neurons of the previous layer.
