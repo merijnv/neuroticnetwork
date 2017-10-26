@@ -38,4 +38,11 @@ public class Computed extends Node {
     public int countInputs() {
         return inputs.size();
     }
+
+    /**
+     * Returns input number i
+     */
+    public Node getInput(int i) {
+        return inputs.get(i);
+    }
 }

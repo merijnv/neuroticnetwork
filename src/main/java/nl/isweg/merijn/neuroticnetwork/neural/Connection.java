@@ -4,14 +4,14 @@ import nl.isweg.merijn.neuroticnetwork.node.Node;
 
 /**
  * A Connections is a Node with one input Neuron,
- * a weight with which it multiplies the output of the node as its value.
+ * a weight with which it multiplies the output of that neuron as its value.
  *
  * The initial weight is 1.0.
  */
 public class Connection extends Node {
 
     private double weight = 1.0;
-    private Node node;
+    private Neuron neuron;
 
     public double getWeight() {
         return weight;
@@ -23,14 +23,14 @@ public class Connection extends Node {
 
     @Override
     public double getValue() {
-        return node.getValue() * weight;
+        return neuron.getValue() * weight;
     }
 
-    public void setInput(Node node) {
-        this.node = node;
+    public void setInput(Neuron node) {
+        this.neuron = node;
     }
 
-    public Node getNode() {
-        return node;
+    public Neuron getNeuron() {
+        return neuron;
     }
 }

@@ -1,31 +1,14 @@
 package nl.isweg.merijn.neuroticnetwork.neural;
 
-import nl.isweg.merijn.neuroticnetwork.node.Computed;
-
 /**
- * A Neuron is a Computed node (sums its inputs), adjusted with a bias.
+ * Marker interface for Neurons.
+ *
+ * The input neuron is a variable and the computed neurons is a computed node.
+ * I want the layers to have Neurons in them, not generic nodes. Allowing that to be nodes
+ * would allow Connections to be added to the Layer. And that is not what layers are for.
+ *
+ * Each neuron has a getValue(), modeled here.
  */
-public class Neuron extends Computed {
-    private double bias = 0.0;
-
-    @Override
-    public double getValue() {
-        return super.getValue() + bias;
-    }
-
-    /**
-     * The value of the Neuron is the value of the underlying Compute node
-     * plus the bias.
-     *
-     * @return neuron value.
-     */
-
-
-    public double getBias() {
-        return bias;
-    }
-
-    public void setBias(double bias) {
-        this.bias = bias;
-    }
+interface Neuron {
+    double getValue();
 }

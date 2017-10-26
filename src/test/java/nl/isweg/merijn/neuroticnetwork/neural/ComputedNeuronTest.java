@@ -6,12 +6,12 @@ import org.junit.Test;
 
 import static junit.framework.TestCase.assertEquals;
 
-public class NeuronTest {
-    Neuron n = null;
+public class ComputedNeuronTest {
+    ComputedNeuron n = null;
 
     @Before
     public void before() {
-        n = new Neuron();
+        n = new ComputedNeuron();
     }
 
     @Test
